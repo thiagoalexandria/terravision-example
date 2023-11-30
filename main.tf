@@ -27,7 +27,7 @@ module "app2_two_tier_application" {
   iam_instance_profile = "Ec2RoleSSM"
   vpc_id               = data.aws_subnet.pub1.vpc_id
   subnet_list          = [data.aws_subnet.pub1.id, data.aws_subnet.pub2.id]
-  alb_name             = "livelo-dev-app"
+  alb_name             = "dev-app"
 
   tags = {
     environment = "dev"
